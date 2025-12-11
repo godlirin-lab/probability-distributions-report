@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Basic Probability Distributions Report}
+\author{Jihun Yun}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This short report introduces two fundamental probability distributions:
+the standard normal distribution and a binomial distribution with parameters
+$n=10$ and $p=0.3$.  
+Both graphs were generated using Python.
+
+\section{Standard Normal Distribution}
+The standard normal distribution is defined as:
+\[
+f(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2}.
+\]
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{normal.png}
+\caption{Standard Normal Distribution}
+\end{figure}
+
+\section{Binomial Distribution}
+The binomial distribution with parameters $n=10$ and $p=0.3$ has the probability mass function:
+\[
+P(X=k) = \binom{10}{k} (0.3)^k (0.7)^{10-k}, \quad k=0,\dots,10.
+\]
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{binomial.png}
+\caption{Binomial Distribution (n=10, p=0.3)}
+\end{figure}
+
+\end{document}
